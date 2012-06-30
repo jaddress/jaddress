@@ -1,4 +1,4 @@
-package org.jaddress.address;
+package org.jaddress.address.canada;
 
 /**
  * User: Mathieu

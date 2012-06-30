@@ -1,4 +1,4 @@
-package org.jaddress.address;
+package org.jaddress.address.canada;
 
 import org.junit.Test;
 
@@ -21,7 +21,7 @@ public class CanadianAddressExampleTest {
         String province = "Quebec";
         String postalCode = "H3G 1H6";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setCivicNumber(civicNumber)
                                                          .setStreet(street)
@@ -31,13 +31,13 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CanadianAddressExampleTest {
         String province = "Ontario";
         String postalCode = "M5G 1R3";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setCivicNumber(civicNumber)
                                                          .setStreet(street)
@@ -59,13 +59,13 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -77,7 +77,7 @@ public class CanadianAddressExampleTest {
         String province = "British Columbia";
         String postalCode = "V6C 2W6";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setCivicNumber(civicNumber)
                                                          .setStreet(street)
@@ -87,13 +87,13 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -106,7 +106,7 @@ public class CanadianAddressExampleTest {
         String province = "Manitoba";
         String postalCode = "R3R 0C5";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setAdditionalDeliveryInformation(additionalDeliveryInformation)
                                                          .setCivicNumber(civicNumber)
@@ -117,14 +117,14 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(additionalDeliveryInformation, is(montrealAddress.getAdditionalDeliveryInformation()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(additionalDeliveryInformation, is(address.getAdditionalDeliveryInformation()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -138,7 +138,7 @@ public class CanadianAddressExampleTest {
         String province = "Alberta";
         String postalCode = "RT0L 1K0";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setCivicNumber(civicNumber)
                                                          .setStreet(street)
@@ -150,15 +150,15 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(ruralRoute, is(montrealAddress.getRuralRoute()));
-        assertThat(retailPostalOutlet, is(montrealAddress.getRetailPostalOutlet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(ruralRoute, is(address.getRuralRoute()));
+        assertThat(retailPostalOutlet, is(address.getRetailPostalOutlet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -172,7 +172,7 @@ public class CanadianAddressExampleTest {
         String province = "Alberta";
         String postalCode = "RT0L 1K0";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setSite(site)
                                                          .setCompartment(compartment)
@@ -184,15 +184,15 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(site, is(montrealAddress.getSite()));
-        assertThat(compartment, is(montrealAddress.getCompartment()));
-        assertThat(ruralRoute, is(montrealAddress.getRuralRoute()));
-        assertThat(retailPostalOutlet, is(montrealAddress.getRetailPostalOutlet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(province, is(montrealAddress.getProvince()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(site, is(address.getSite()));
+        assertThat(compartment, is(address.getCompartment()));
+        assertThat(ruralRoute, is(address.getRuralRoute()));
+        assertThat(retailPostalOutlet, is(address.getRetailPostalOutlet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(province, is(address.getProvince()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -204,7 +204,7 @@ public class CanadianAddressExampleTest {
         String territory = "Yukon";
         String postalCode = "Y1A 3E4";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setCivicNumber(civicNumber)
                                                          .setStreet(street)
@@ -214,13 +214,13 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(civicNumber, is(montrealAddress.getCivicNumber()));
-        assertThat(street, is(montrealAddress.getStreet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(territory, is(montrealAddress.getProvinceOrTerritory()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(civicNumber, is(address.getCivicNumber()));
+        assertThat(street, is(address.getStreet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(territory, is(address.getProvinceOrTerritory()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 
     @Test
@@ -231,7 +231,7 @@ public class CanadianAddressExampleTest {
         String territory = "British Columbia";
         String postalCode = "V0N 1B0";
 
-        CanadianAddress montrealAddress = CanadianAddress.Builder.init()
+        CanadianAddress address = CanadianAddress.Builder.init()
                                                          .setAddressee(addressee)
                                                          .setRetailPostalOutlet(retailPostalOutlet)
                                                          .setMunicipality(municipality)
@@ -240,11 +240,11 @@ public class CanadianAddressExampleTest {
                                                          .create();
 
 
-        assertThat(addressee, is(montrealAddress.getAddressee()));
-        assertThat(retailPostalOutlet, is(montrealAddress.getRetailPostalOutlet()));
-        assertThat(municipality, is(montrealAddress.getMunicipality()));
-        assertThat(territory, is(montrealAddress.getProvinceOrTerritory()));
-        assertThat(postalCode, is(montrealAddress.getPostalCode()));
-        assertThat(CanadianAddress.COUNTRY_NAME, is(montrealAddress.getCountry()));
+        assertThat(addressee, is(address.getAddressee()));
+        assertThat(retailPostalOutlet, is(address.getRetailPostalOutlet()));
+        assertThat(municipality, is(address.getMunicipality()));
+        assertThat(territory, is(address.getProvinceOrTerritory()));
+        assertThat(postalCode, is(address.getPostalCode()));
+        assertThat(CanadianAddress.COUNTRY_NAME, is(address.getCountry()));
     }
 }

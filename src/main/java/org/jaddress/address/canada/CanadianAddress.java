@@ -1,4 +1,6 @@
-package org.jaddress.address;
+package org.jaddress.address.canada;
+
+import org.jaddress.address.Address;
 
 /**
  * User: Mathieu
@@ -76,10 +78,10 @@ public class CanadianAddress implements Address {
     }
 
     public static class Builder{
-        private CanadianAddress addressBuilt;
+        private CanadianAddress addressInstance;
 
         public Builder() {
-            this.addressBuilt = new CanadianAddress();
+            this.addressInstance = new CanadianAddress();
         }
 
         public static Builder init(){
@@ -87,66 +89,66 @@ public class CanadianAddress implements Address {
         }
 
         public CanadianAddress create() {
-            return addressBuilt;
+            return addressInstance;
         }
 
         public Builder setCivicNumber(String civicNumber) {
-            addressBuilt.civicNumber = civicNumber;
+            addressInstance.civicNumber = civicNumber;
             return this;
         }
 
         public Builder setMunicipality(String municipality) {
-            addressBuilt.municipality = municipality;
+            addressInstance.municipality = municipality;
             return this;
         }
 
         public Builder setProvince(String province) {
-            addressBuilt.provinceOrTerritory = province;
+            addressInstance.provinceOrTerritory = province;
             return this;
         }
 
         public Builder setPostalCode(String postalCode) {
-            addressBuilt.postalCode = postalCode;
+            addressInstance.postalCode = postalCode;
             return this;
         }
 
         public Builder setAddressee(String addressee) {
-            addressBuilt.addressee = addressee;
+            addressInstance.addressee = addressee;
             return this;
         }
 
         public Builder setStreet(String street) {
-            addressBuilt.street = street;
+            addressInstance.street = street;
             return this;
         }
 
         public Builder setAdditionalDeliveryInformation(String additionalDeliveryInformation) {
-            addressBuilt.additionalDeliveryInformation = additionalDeliveryInformation;
+            addressInstance.additionalDeliveryInformation = additionalDeliveryInformation;
             return this;
         }
 
         public Builder setRuralRoute(String ruralRoute) {
-            addressBuilt.ruralRoute = ruralRoute;
+            addressInstance.ruralRoute = ruralRoute;
             return this;
         }
 
         public Builder setRetailPostalOutlet(String retailPostalOutlet) {
-            addressBuilt.retailPostalOutlet = retailPostalOutlet;
+            addressInstance.retailPostalOutlet = retailPostalOutlet;
             return this;
         }
 
         public Builder setTerritory(String territory) {
-            addressBuilt.provinceOrTerritory = territory;
+            addressInstance.provinceOrTerritory = territory;
             return this;
         }
 
         public Builder setSite(String site) {
-            addressBuilt.site = site;
+            addressInstance.site = site;
             return this;
         }
 
         public Builder setCompartment(String compartment) {
-            addressBuilt.compartment = compartment;
+            addressInstance.compartment = compartment;
             return this;
         }
     }
