@@ -1,6 +1,8 @@
 jaddress
 ========
 
+Build Status: [![Build Status](http://ec2-50-16-63-183.compute-1.amazonaws.com/jenkins/job/jaddress/badge/icon)](http://ec2-50-16-63-183.compute-1.amazonaws.com/jenkins/job/jaddress/)
+
 Java Open Address Library
 
 WARNING - This is really a work in progress right now. Very incomplete and pretty much only a proof of concept at this time
