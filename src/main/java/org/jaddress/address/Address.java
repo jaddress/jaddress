@@ -6,4 +6,5 @@ package org.jaddress.address;
  * Time: 10:07 PM
  */
 public interface Address {
+    Country getCountry();
 }
